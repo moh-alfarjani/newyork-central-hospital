@@ -2,7 +2,7 @@
 A responsive and professional front-end website for a fictional hospital built with clean HTML, CSS, and JavaScript. This project is designed to simulate a real-world healthcare website, showcasing attention to detail, UI/UX design, and practical front-end architecture.
 
 ## 🖼️ Preview
-![Website Preview](./src/img/top.png)
+![Website Preview](src/top.png)
 
 ## 🔗 Live Links
 [Live Demo on GitHub Pages]()
