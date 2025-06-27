@@ -1,0 +1,744 @@
+@font-face {
+  font-family: 'cairo';
+  src: url('../fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cairo';
+  src: url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cairo';
+  src: url('../fonts/Cairo-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Cairo', sans-serif;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #2243e7;
+    transition: 1s ease;
+}
+button{
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #2243e7;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s ease;
+    box-shadow: 0 4px 12px #05050549;
+}
+button:hover{
+    background-color: #3b5bfa;
+    transform: scale(1.1);
+}
+
+
+
+/*++++++++_Header_++++++++++*/
+header{
+  position: fixed;
+  bottom: 5px; /* المسافة من أسفل الشاشة */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.651);
+  padding: 5px 20px;
+  border-radius: 30px;
+  z-index: 999; /* لتكون فوق كل العناصر */
+  box-shadow: 0 4px 12px #05050549;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+header nav a{
+    font-size: 21px;
+    font-weight: 600;
+    transition: 1s ease;
+}
+header nav a:hover{
+    transform: scale(1.05);
+    color: #3b5bfa;
+    border-bottom: 2px solid blue;
+}
+header nav .home_link{
+    margin: 5px;
+    color: #3b5bfa;
+    font-weight: 700;
+    border-bottom: 2px solid blue;
+}
+
+
+
+/*++++++++_Main_++++++++++*/
+main{
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    transition: 1s ease;
+}
+
+main .main_top{
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/main.jpg");
+    background-size: cover;         /* تغطي العنصر بالكامل */
+    background-position: center;    /* توسيط الصورة */
+    background-repeat: no-repeat;   /* عدم تكرار الصورة */
+    position: relative;
+}
+main .main_top .main_top_box{
+    background-color: #f0f0f0;
+    text-align: left;
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px #05050549;
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+    padding: 50px 25px ;
+    transition: 1s ease;
+    max-width: 50%;
+}
+main .main_top .main_top_box:hover{
+    background: #f0f0f0;
+    transform: scale(1.01);
+}
+main .main_top .main_top_box h4{
+    font-weight: 300;
+    color: #3b5bfa;
+    margin: 5px;
+}
+main .main_top .main_top_box h1{
+    font-size:  48px;
+    font-weight: 900;
+    transition: 1.5s ease;
+    line-height: 1;
+}
+main .main_top .main_top_box h1:hover{
+    color: #007BFF;
+}
+
+main .main_top .main_top_box p{
+    font-size:  24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+.main_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #2243e7;
+    color: #fff;
+}
+.main_bottom h1 {
+    text-align: center;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.main_bottom .main_bottom_btn a button{
+    font-size:12px;
+    background-color: #fff;
+    color: #111;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+.main_bottom .main_bottom_btn a button:hover{
+    background-color: #f0f0f096;
+    color: #3b5bfa;
+
+}
+.main_bottom .main_bottom_btn a .main_bottom_btn_2{
+    background-color: #c7c7c7;
+    color: #000;
+}
+
+
+
+/*++++++++_sec-lab_++++++++++*/
+.sec_lab{
+    width: 95%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec_lab .sec_lab_main{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec_lab .sec_lab_img_box{
+    width: 35%;
+    height: 75%;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px #05050549;
+    transition: 1s ease;
+    background-image: url("../img/lab/1.png");
+    background-size: cover;         /* تغطي العنصر بالكامل */
+    background-position: center;    /* توسيط الصورة */
+    background-repeat: no-repeat;   /* عدم تكرار الصورة */
+    padding: 10px;
+}
+.sec_lab .sec_lab_img_box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px #05050549;
+    border-radius: 10px;
+}
+.sec_lab .sec_lab_main{
+    height: 100%;
+    width: 40%;
+}
+.sec_lab .sec_lab_main .sec_lab_main_top{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #2243e7;
+}
+.sec_lab .sec_lab_main .sec_lab_main_top small{
+    font-size: 18px;
+    color: #3b5bfa;
+    line-height: 1.1;
+}
+.sec_lab .sec_lab_main .sec_lab_main_top h1{
+    font-size: 45px;
+    font-weight: 900;
+    transition: 1s ease;
+    line-height: 1.5;
+}
+.sec_lab .sec_lab_main .sec_lab_main_top h1:hover{
+    color: #3b5bfa;
+    transform: scale(1.01);
+}
+.sec_lab .sec_lab_main .sec_lab_main_top p{
+    font-size: 20px;
+    line-height: 1;
+    font-weight:200;
+}
+.sec_lab_icons .sec_lab_icons_icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.sec_lab_icons .sec_lab_icons_icon a{
+    padding: 10px 15px;
+    background-color: #2243e7;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: 0.5s ease;
+}
+.sec_lab_icons .sec_lab_icons_icon a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px #05050549;
+}
+.sec_lab_icons .sec_lab_icons_icon a i{
+    font-size: 24px;
+    color: #f0f0f0;
+}
+.sec_lab_icons .sec_lab_icons_icon p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/*++++++++_sec-work-pro_++++++++++*/
+.work_pro{
+    width: 100%;
+    height: auto;
+    background-color: #2243e7;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s ease;
+    overflow: visible; /* ✅ مهم ليظهر العنصر الخارج */
+    position: relative; /* ✅ لتصبح نقطة مرجعية للعنصر الإبن */
+}
+.work_pro .work_pro_4data{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* ✅ نضيف التالي لإخراج العنصر من الأعلى */
+    position: absolute;
+    top: -80px; /* عدّل القيمة حسب ما تريده */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.work_pro .work_pro_4data .work_pro_data{
+    width: 20%;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 15%;
+    transition: 0.5s ease;
+    background: #f0f0f0e5;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+.work_pro .work_pro_4data .work_pro_data:hover{
+    background-color: #ffffffad;
+    box-shadow: 0 3px 10px #00000067;
+    transform: scale(1.03);
+}
+.work_pro .work_pro_4data .work_pro_data h1{
+    font-size: 42px;
+    font-weight: 900;
+    transition: 1s ease;
+}
+.work_pro .work_pro_4data .work_pro_data h1:hover{
+    color: #3b5bfa;
+    transform: scale(1.05);
+}
+.work_pro .work_pro_4data .work_pro_data p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.work_pro .work_pro_top{
+    margin: 30px 0;
+    margin-top: 80px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: #fff;
+}
+.work_pro .work_pro_top p{
+    color: #b4bef3;
+    font-size: 21px;
+}
+.work_pro .work_pro_top h1{
+    font-weight: 900;
+    font-size: 48px;
+    transition: 1s ease;
+    line-height: 1.2;
+}
+.work_pro .work_pro_top h1:hover{
+    transform: scale(1.05);
+    color: #f0f0f0;
+}
+.work_pro .work_pro_top small{
+    font-size: 14px;
+    font-weight: 100;
+    color: #f0f0f0;
+}
+.work_pro .work_pro_culms{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;         /* يسمح بلف العناصر للسطر التالي */
+    gap: 10px;               /* مسافة بين العناصر */
+}
+.work_pro .work_pro_culms .work_pro_culms_cards{
+    flex: 0 0 calc(33.333% - 10px); /* كل عنصر يأخذ ثلث العرض تقريبا */
+    text-align: center;
+}
+.work_pro .work_pro_culms .work_pro_culms_cards .work_pro_culms_cards_card{
+    margin: 10px 0;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.work_pro .work_pro_culms .work_pro_culms_cards .work_pro_culms_cards_card img{
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px #00000067;
+    transition: 0.5s ease;
+}
+.work_pro .work_pro_culms .work_pro_culms_cards .work_pro_culms_cards_card img:hover{
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+.work_pro .work_pro_culms .work_pro_culms_cards .work_pro_culms_cards_card p{
+    font-size: 22px;
+}
+.work_pro .work_pro_culms .work_pro_culms_cards .work_pro_culms_cards_card small{
+    font-weight: 400;
+    font-size: 12px;
+}
+.work_pro .work_pro_culms_img{
+    flex: 0 0 calc(33.333% - 10px); /* كل عنصر يأخذ ثلث العرض تقريبا */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* يجعل العنصر في الأسفل */
+    align-items: center;
+}
+.work_pro .work_pro_culms_img img{
+    width: 150%;
+    transition: 1s ease;
+}
+
+
+
+/*++++++++_sec_blog-cards_++++++++++*/
+.blog_cards{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+    grid-template-rows: repeat(2, 1fr);    /* 3 صفوف */
+    gap: 10px;
+    padding: 10px;     
+    margin: 25px 0;   
+}
+.blog_cards .blog_cards_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+.blog_cards .blog_cards_card img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    transition: 1s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px #05050549;
+}
+.blog_cards .blog_cards_card img:hover{
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+.blog_cards .blog_cards_card h5{
+    font-size: 25px;
+    color: #111;
+}
+.blog_cards .blog_cards_card small{
+    font-size: 12px;
+    color: #000;
+}
+.blog_cards .blog_cards_card button{
+    font-size: 14px;
+    padding: 5px 10px;
+    box-shadow: none;
+}
+button:hover{
+    background-color: #3b5bfa;
+    box-shadow: 0 4px 12px #05050549;
+    transform: scale(1.05);
+}
+
+
+
+/*++++++++_sec-advice_++++++++++*/
+.advice{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 25px;
+}
+.advice .advice_left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.advice .advice_left .cover_img{
+    width: 80%;
+    margin-bottom: 20px;
+    aspect-ratio: 1 / 1;  /* مربع بنسبة 1:1 */
+    overflow: hidden;     /* لإخفاء الزائد */
+    border-radius: 20px;
+    transition: 1s ease;
+    box-shadow: 0 2px 8px #05050549;
+}
+.advice .advice_left .cover_img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #05050549;
+}
+.advice .advice_left .cover_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* قص من المنتصف لتعبئة الإطار */
+    object-position: center;
+}
+.advice .advice_left h3{
+    font-size: 32px;
+}
+.advice .advice_left button{
+    padding: 10px 20px;
+}
+.advice .advice_right{
+    height: 100%;
+    width: 40%;
+    text-align: left;
+}
+.advice .advice_right .advice_faq{
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.advice .advice_right .advice_faq p{
+    font-size: 16px;
+}
+.advice .advice_right .advice_faq a{
+    padding: 2px 10px;
+    background-color: #2243e7;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: 0.5s ease;
+}
+.advice .advice_right .advice_faq a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px #05050549;
+}
+.advice .advice_right .advice_faq a i{
+    color: #fff;
+}
+.advice .advice_right .advice_faq_detlis{
+    background-color: #8799f3bd;
+    color: #111;
+    padding: 10px;
+    transition: 1s ease;
+    margin-bottom: 25px;
+    border-radius: 0 0 20px 20px;
+}
+.advice .advice_right .advice_faq_detlis:hover{
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.advice .advice_right .advice_faq_detlis p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.advice .advice_right .advice_faq_detlis small ul{
+    list-style: none;
+    margin-left: 5px;
+}
+.advice .advice_right .advice_faq_detlis small ul li{
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color:#222;
+}
+
+
+
+/*++++++++_sec-work-pro_++++++++++*/
+.our_team{
+    width: 100%;
+    height: auto;
+    background-color: #2243e7;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s ease;
+}
+.our_team .our_team_top{
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.our_team .our_team_top p{
+    color: #b4bef3;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.our_team .our_team_top h1{
+    font-weight: 900;
+    font-size: 50px;
+    transition: 1s ease;
+    line-height: 1.1;
+}
+.our_team .our_team_top h1:hover{
+    transform: scale(1.05);
+}
+.our_team .our_team_top small{
+    font-size: 18px;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+.our_team .our_team_culms{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;         /* يسمح بلف العناصر للسطر التالي */
+    gap: 15px;               /* مسافة بين العناصر */
+}
+.our_team .our_team_culms .our_team_culms_cards{
+    flex: 0 0 calc(33.333% - 10px); /* كل عنصر يأخذ ثلث العرض تقريبا */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card{
+    margin: 10px 0;
+    color: #000;
+    background-color: #f0f0f0;
+    width: 100%;
+    border-radius: 35px;
+    transition: 1s ease;
+    padding: 20px 5px;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card img{
+    width: 85%;
+    border-radius: 35px;
+    transition: 1s ease;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card img:hover{
+    transform: scale(1.01);
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det p{
+    font-size: 24px;
+    transition: 1s ease;
+    color: #2243e7;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det p:hover{
+    color: #546de7;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det small{
+    font-weight: 400;
+    font-size: 12px;
+    color: #0000009a;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det small{
+    font-weight: 400;
+    font-size: 12px;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det h4{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det .team_social-icons a i{
+    margin: 5px;
+    font-size: 28px;
+    transition: 1s ease;
+}
+.our_team .our_team_culms .our_team_culms_cards .our_team_culms_cards_card .our_team_culms_cards_card_det .team_social-icons a i:hover{
+    transform: scale(1.1);
+    color: #007BFF;
+}
+
+
+
+/* ====== Footer Styling ====== */
+.main-footer {
+    width: 100%;
+    background-color: #2e3a59; /* رمادي مائل للأزرق */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-footer h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.main-footer p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #e0e0e0;
+}
+
+.main-footer span {
+    color: #3b82f6; /* أزرق مميز للكلمات المهمة */
+    font-weight: bold;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #f2f2f2;
+    margin: 0 10px;
+    font-size: 18px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+.social-icons a:hover {
+    color: #3b82f6;
+    transform: scale(1.2);
+}
+
+.main-footer .copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
