@@ -5,8 +5,7 @@ A responsive and professional front-end website for a fictional hospital built w
 [Live Demo on GitHub Pages](https://moh-alfarjani.github.io/newyork-central-hospital/)
 
 ## 🖼️ Preview
-Too long go down For More Things⬇️⬇️⬇️👇
-![Website Preview](src/top.png)
+it's Photo For Fall Templet So it's Too long go down For it⬇️⬇️⬇️👇
 
 ---
 
@@ -49,7 +48,12 @@ The main goal was to create a fully functional medical website for a hospital th
 - 🔹 LinkedIn: *()*
 
 ---
+---
 
+![Website Preview](src/top.png)
+
+---
+---
 ## 🔖 Hashtags
 `#WebDevelopment` `#FrontEndDeveloper` `#HospitalWebsite`  
 `#HTML` `#CSS` `#JavaScript` `#ResponsiveDesign`  
