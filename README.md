@@ -45,7 +45,7 @@ The main goal was to create a fully functional medical website for a hospital th
 
 - 🔹 GitHub Repo: [github.com/moh-alfarjani](https://github.com/moh-alfarjani)
 - 🔹 Facebook Page: [facebook.com/mohalfarjani](https://www.facebook.com/mohalfarjani)
-- 🔹 LinkedIn: *()*
+- 🔹 LinkedIn: [https://www.linkedin.com/in/moh-alfarjani/]
 
 ---
 ---
